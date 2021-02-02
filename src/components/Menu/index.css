@@ -1,0 +1,18 @@
+nav.menu .list {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 1rem;
+    border-bottom: 1px solid rgba(217, 219, 253, .5);
+    margin-bottom: 2rem;
+    max-width: 80%;
+}
+
+nav.menu .list .item {
+    margin: 0 .5rem;
+} 
+
+nav.menu .list .item a {
+    color: #333;
+    font-weight: 500;
+    padding: .5rem 2rem;
+}
