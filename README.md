@@ -1,5 +1,5 @@
 ## Project published on Github Pages
-Visit [http://ismaelrsousa.github.io/novo-portfolio](http://ismaelrsousa.github.io/novo-portfolio) to see the project. Hope you like :)
+Visit [https://ismaelrsousa.github.io/novo-portfolio](https://ismaelrsousa.github.io/novo-portfolio) to see the project. Hope you like :)
 
 # Getting Started with Create React App
 
