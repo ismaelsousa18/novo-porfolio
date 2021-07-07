@@ -52,17 +52,17 @@ section.content .right {
 }
 
 section.content .right .laptop {
-  width: calc(100% - 6rem);
+  width: 500px;
   margin-top: 10rem;
-  margin-left: 6rem;
+  margin-left: 10rem;
   animation: fade-top 1s ease-in-out;
 }
 
 section.content .right .phone {
   position: absolute;
-  left: 0%;
-  top: 28%;
-  width: 125px;
+  left: 5%;
+  top: 20%;
+  width: 150px;
   animation: fade-top 1s ease-in-out;
 }
 
@@ -88,5 +88,9 @@ section.content .right .phone {
 }
 
 @media screen and (max-width: 767px) {
-  
+  section.content .left {
+    max-width: 100%;
+  }
+
+  section.content .right { display: none; }
 }

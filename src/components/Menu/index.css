@@ -40,3 +40,9 @@ nav.menu .list .item a:hover::before {
   opacity: 1;
   transform: translateX(0px);
 }
+
+@media screen and (max-width: 767px) {
+  nav.menu {
+    display: none;
+  }
+}

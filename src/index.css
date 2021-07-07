@@ -14,9 +14,11 @@ body, ul, li, html, a, button, * {
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 :root {
   --green: #37FF4B;
+  --mobile: 767px;
+  --tablet: 992px;
 }
