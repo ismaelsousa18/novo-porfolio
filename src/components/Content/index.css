@@ -1,63 +1,92 @@
 section.content {
-    padding-left: 3.5rem;
-    display: flex;
-    padding-top: 2rem;
-    min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2rem;
 }
 
-section.content > .text {
-    max-width: 30vw;
-    width: 100%;
+section.content .left {
+  max-width: 40%;
 }
 
-section.content > .text .title {
-    font-size: 30px;
-    color: #323978;
-    margin-bottom: .5rem;
+section.content .left .hi {
+  font-size: 38px;
+  font-weight: 400;
+  position: relative;
+  color: var(--green);
 }
 
-section.content > .text .desc {
-    line-height: 24px;
-    font-size: 16px;
-    margin-bottom: 2rem;
+section.content .left .hi::before {
+  content: '›';
+  position: absolute;
+  left: -1.5rem;
+  font-size: 30px;
+  transition: .2s;
+  font-weight: 100;
+  margin-top: 4px;
+  z-index: 20;
+  color: var(--green);
+  animation: blink 2s infinite linear;
 }
 
-section.content > .text .desc strong {
-    font-weight: 600;
-    color: #323978;
+section.content .left .title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 4rem;
 }
 
-section.content > .text .cta-button {
-    padding: 1rem 3rem;
-    background-color: #323978;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: .5px;
-    border-radius: 3px;
+section.content .left .title .colored {
+  color: var(--green);
 }
 
-section.content > .notebook-decoration {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 35vw;
-    background: url("../../images/decoration/notebook-bg.png") right/contain no-repeat;
-    height: 95vh;
+section.content .left .desc p {
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
 }
 
-section.content > .notebook-decoration .mobile {
-    position: absolute;
-    max-width: 200px;
-    bottom: 275px;
-    right: 225px;
-    z-index: 90;
+section.content .right {
+  max-width: 50%;
+  width: 100%;
+  position: relative;
 }
 
-section.content > .notebook-decoration .notebook {
-    position: absolute;
-    bottom: 50px;
-    max-width: 450px;
-    right: 0px;
+section.content .right .laptop {
+  width: calc(100% - 6rem);
+  margin-top: 10rem;
+  margin-left: 6rem;
+  animation: fade-top 1s ease-in-out;
+}
+
+section.content .right .phone {
+  position: absolute;
+  left: 0%;
+  top: 28%;
+  width: 125px;
+  animation: fade-top 1s ease-in-out;
+}
+
+@keyframes fade-top {
+  0% {
+    opacity: 0;
+    transform: translate(-5px, 30px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
 }

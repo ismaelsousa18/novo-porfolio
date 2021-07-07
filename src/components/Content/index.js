@@ -1,39 +1,44 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
-import './index.css';
+import "./index.css";
 
-import MobileImg from '../../images/decoration/mobile.png';
-import NotebookImg from '../../images/decoration/notebook.png';
-import Background from '../../images/decoration/notebook-bg.png';
+import LaptopImg from "../../images/decoration/laptop.svg";
+import PhoneImg from "../../images/decoration/phone.svg";
 
 class Content extends Component {
-    state = {  }
+  state = {};
 
-    render() { 
-        return (
-            <section className="container content">
-                <div className="text">
-                    <h2 className="title">Olá,</h2>
+  render() {
+    return (
+      <section className="content container">
+        <div className="left">
+          <div className="hi">olá,</div>
+          <h2 className="title">
+            eu sou <span className="colored">ismael sousa</span>
+            <br /> desenvolvedor front end
+          </h2>
 
-                    <p className="desc">Eu sou <strong>Ismael Sousa</strong> e trabalho com <strong>Desenvolvimento de Sites e Apps</strong>.</p>
+          <div className="desc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur consequuntur eius sit assumenda et voluptates exercitationem minus, rerum sint illo veniam maxime autem culpa
+              quae nisi mollitia ipsa voluptate!
+            </p>
 
-                    <p className="desc">Lorem ipsum dolor sit ammet lorem ipsum dolor sit ammet lorem ipsum dolor sit ammet lorem ipsum dolor sit ammet</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur consequuntur eius sit assumenda et voluptates exercitationem minus, rerum sint illo veniam maxime autem culpa
+              quae nisi mollitia ipsa voluptate!
+            </p>
+          </div>
+        </div>
 
-                    <p className="desc">Lorem ipsum dolor sit ammet lorem ipsum dolor sit ammet lorem ipsum dolor</p>
-
-                    <a href="#" className="cta-button-container">
-                        <button className="cta-button">Saiba mais</button>
-                    </a>
-                </div>
-
-                <div className="notebook-decoration">
-                    <img src={MobileImg} alt="" className="mobile"/>
-                    <img src={NotebookImg} alt="" className="notebook"/>
-                </div>
-            </section>
-        );
-    }
+        <div className="right">
+          <img src={ LaptopImg } alt="" className="laptop" />
+          <img src={ PhoneImg } alt="" className="phone" />
+        </div>
+      </section>
+    );
+  }
 }
- 
+
 export default Content;

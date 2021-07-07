@@ -12,7 +12,11 @@ body, ul, li, html, a, button, * {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 1rem;
+}
+
+:root {
+  --green: #37FF4B;
 }

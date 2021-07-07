@@ -33,7 +33,7 @@ nav.menu .list .item a::before {
 }
 
 nav.menu .list .item a:hover {
-  color: #37FF4B;
+  color: var(--green);
 }
 
 nav.menu .list .item a:hover::before {
